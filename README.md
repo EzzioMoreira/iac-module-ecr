@@ -1,3 +1,15 @@
+## Diagrama do projeto
+![Diagrama](./img/diagrama.png)
+
+## Cria Repositório AWS ECR
+- Um repositório é o local em que armazena as imagens do Docker no Amazon ECR.
+
+- Cria usuário IAM com acesso programático na AWS.
+Acesso programático: o usuário do IAM poderá fazer apenas chamadas à API AWS. Nesse caso, será criado uma chave de acesso para esse usuário.  
+
+- Cria politica que permite acesso create/pull/push no ECR.
+O Amazon ECR usa permissões baseadas em recursos para controlar o acesso a repositórios. As permissões baseadas em recursos permitem especificar quais usuários do IAM têm acesso a um repositório e quais ações podem realizar nele. Nesse caso a politica concede permissão create, pull e push de imagens de container em determinado repositório ECR que foram definidos na `policy`. 
+
 ## Requirements
 
 | Name | Version |
