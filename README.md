@@ -44,7 +44,6 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| <a name="input_region"></a> [region](#input\_region) | Região da AWS | `string` | n/a | yes |
 | <a name="input_repo_name"></a> [repo\_name](#input\_repo\_name) | Nome do repositório para imagens de container | `string` | n/a | yes |
 | <a name="input_tags"></a> [tags](#input\_tags) | Tags para recurso | `map(string)` | `null` | no |
 
